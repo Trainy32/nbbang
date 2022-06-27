@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { Route, Routes, useNavigate } from 'react-router-dom'
+
+// CSS 관련 Imports
+import styled from 'styled-components'
+
+//Components
+import Header from './components/Header'
+import ScrollRestore from './components/ScrollRestore'
+
+import Home from './pages/Home'
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          !!!!!!!!
-        </a>
-      </header>
-    </div>
+    <Wrapper className="App">
+      <Header/>
+      <ScrollRestore/>
+      
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
+    </Wrapper>
   );
 }
 
 export default App;
+
+const Wrapper = styled.div`
+width: 100%;
+max-width: 700px;
+margin: auto;
+border: 1px solid #ddd;
+`
