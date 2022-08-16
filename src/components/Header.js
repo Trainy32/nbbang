@@ -36,6 +36,7 @@ const Wrapper = styled.div`
   .icon {
     margin: 0px 10px;
     font-size: 40px;
+    cursor: pointer;
   }
 `
 

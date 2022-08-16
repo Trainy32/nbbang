@@ -8,6 +8,7 @@ import styled from 'styled-components'
 //Components
 import Header from './components/Header'
 import ScrollRestore from './components/ScrollRestore'
+import AddBtn from './components/AddBtn';
 
 import Home from './pages/Home'
 
@@ -18,6 +19,7 @@ function App() {
     <Wrapper className="App">
       <Header/>
       <ScrollRestore/>
+      <AddBtn/>
       
       <Routes>
         <Route path='/' element={<Home/>} />

@@ -9,7 +9,12 @@ const DaySummary = () => {
   
   return (
     <Wrapper>
-
+      <ul>
+        <li> 식비 </li>
+        <li> 교통비 </li>
+        <li> 내기 </li>
+        <li></li>
+      </ul>
     </Wrapper>
   )
 }
